@@ -377,7 +377,7 @@ int contexto() {
     		
     		// Cenário
     		if (continuar(cenario, 0) == 1) {
-    			char * historia = "\t #História: \n\n"
+    			char * sobre = "\t #História: \n\n"
 								  "\t   Aphelios, uma vez um renomado caçador na cidade de Targus,\n"
 								  "\t conheceu Liora, e sua paixão por ela cresceu ao longo de uma década.\n"
 								  "\t No entanto, ele trocou sua carreira de sucesso por uma vida campestre\n"
@@ -389,7 +389,7 @@ int contexto() {
 								  "\t ameaçam a terra e o seu amor por Liora.";
     			
     			// História
-    			if (continuar(historia, 0) == 1) {
+    			if (continuar(sobre, 0) == 1) {
     				char* objetivos = "\t #Objetivos: \n\n"
 									  "\t - Recuperar seu status de caçador, proteger Ionia e proteger Liora dos perigos que se aproximam. \n\n"
 									  "\t - Descobrir a verdade sobre Veigar e seus planos sombrios. \n\n"
@@ -422,7 +422,7 @@ int contexto() {
 								system("cls");
 								
 								// Começo da história
-								historia;
+								historia();
 							}
 						}		
 					}
